@@ -6,8 +6,8 @@ import 'package:online_bookstore/views/settings/settings_page.dart';
 class Routes {
   // SINGLETON
 
-  static final Routes _inctance = Routes._init();
-  static Routes get inctance => _inctance;
+  static final Routes _instance = Routes._init();
+  static Routes get instance => _instance;
 
   Routes._init(); //Private consructor
 
@@ -25,7 +25,6 @@ class Routes {
   }
 
   simpleRoute(Widget route) {
-    builder:
-    (context) => route;
+    return MaterialPageRoute(builder: (context) => route);
   }
 }
