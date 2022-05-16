@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_bookstore/core/init/error_page.dart';
+import 'package:online_bookstore/views/bottomnavbar_page.dart';
 import 'package:online_bookstore/views/home/home_page.dart';
 import 'package:online_bookstore/views/settings/settings_page.dart';
 
@@ -16,6 +17,8 @@ class Routes {
 
     switch (settings.name) {
       case '/':
+        return simpleRoute(BottomNavBar());
+      case '/home':
         return simpleRoute(HomePage());
       case '/settings':
         return simpleRoute(SettingsPage());
